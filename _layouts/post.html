@@ -7,13 +7,14 @@ layout: default
 
   <div class="entry">
     {{ content }}
+  <div class="fb-like" data-href="http://blog.wooyaggo.com{{ page.url }}" data-send="false" data-width="550" data-show-faces="false" data-font="arial"></div>
   </div>
-
-  <div class="fb-comments" data-href="https://blog.wooyaggo.com{{ page.url }}" data-numposts="5"></div>
 
   <div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
+
+  <div class="fb-comments" data-href="http://blog.wooyaggo.com{{ page.url }}" data-numposts="5"></div>
 
   {% include disqus.html %}
 </article>
